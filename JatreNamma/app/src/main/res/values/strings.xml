@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jatre-Namma Pride</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_lost_found">Lost &amp; Found</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_safety">Safety</string>
+</resources>

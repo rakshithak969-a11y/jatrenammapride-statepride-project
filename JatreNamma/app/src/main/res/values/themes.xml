@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.JatreNamma" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/saffron_dark</item>
+        <item name="colorPrimaryVariant">@color/saffron</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_jatre</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/saffron_dark</item>
+        <item name="android:windowBackground">@color/cream</item>
+    </style>
+
+    <style name="Theme.JatreNamma.Splash" parent="Theme.JatreNamma">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

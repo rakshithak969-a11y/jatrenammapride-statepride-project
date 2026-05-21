@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/saffron_dark"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗺️ Jatre Map"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Map Visual Placeholder -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#E8F5E9">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🏛️" android:textSize="48sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Jatre Ground — Village Center"
+                        android:textStyle="bold" android:textSize="16sp"
+                        android:textColor="@color/saffron_dark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Tap markers below for location details"
+                        android:textSize="12sp" android:textColor="#888"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Marker info display -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#FFF3E0">
+                <TextView
+                    android:id="@+id/tv_marker_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="👆 Tap any marker below to see details"
+                    android:textColor="#555"
+                    android:textSize="14sp"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Markers Grid -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Location Markers" android:textStyle="bold"
+                android:textSize="16sp" android:textColor="@color/saffron_dark"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp">
+
+                <androidx.cardview.widget.CardView android:id="@+id/marker_temple"
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1" android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp" app:cardBackgroundColor="#FF6B35">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🏛️" android:textSize="24sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Temple" android:textColor="@android:color/white"
+                            android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/marker_ratha"
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1" android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp" app:cardBackgroundColor="#E65100">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🚩" android:textSize="24sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Ratha" android:textColor="@android:color/white"
+                            android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/marker_wrestling"
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1" android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp" app:cardBackgroundColor="#2E7D32">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🤼" android:textSize="24sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Akhada" android:textColor="@android:color/white"
+                            android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/marker_cattle"
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1" android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp" app:cardBackgroundColor="#5D4037">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🐄" android:textSize="24sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Cattle" android:textColor="@android:color/white"
+                            android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView android:id="@+id/marker_firstaid"
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1" android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp" app:cardBackgroundColor="#C62828">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🏥" android:textSize="24sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="First Aid" android:textColor="@android:color/white"
+                            android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/marker_parking"
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1" android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp" app:cardBackgroundColor="#1565C0">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🅿️" android:textSize="24sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Parking" android:textColor="@android:color/white"
+                            android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/marker_food"
+                    android:layout_width="0dp" android:layout_height="80dp"
+                    android:layout_weight="1" android:layout_margin="4dp"
+                    app:cardCornerRadius="8dp" app:cardBackgroundColor="#F57F17">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:gravity="center" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🍡" android:textSize="24sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Food" android:textColor="@android:color/white"
+                            android:textSize="11sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
